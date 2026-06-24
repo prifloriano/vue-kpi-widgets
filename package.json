@@ -1,0 +1,41 @@
+{
+  "name": "@prifloriano/vue-kpi-widgets",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/vue-kpi-widgets.umd.js",
+  "module": "./dist/vue-kpi-widgets.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-kpi-widgets.es.js",
+      "require": "./dist/vue-kpi-widgets.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prifloriano/vue-kpi-widgets.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.38"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vue-tsc": "^3.3.5"
+  }
+}
