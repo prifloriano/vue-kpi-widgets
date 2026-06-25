@@ -1,6 +1,6 @@
 {
   "name": "@prifloriano/vue-kpi-widgets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "./dist/vue-kpi-widgets.umd.js",
   "module": "./dist/vue-kpi-widgets.es.js",
