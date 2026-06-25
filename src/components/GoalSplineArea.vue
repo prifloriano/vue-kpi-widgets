@@ -115,7 +115,7 @@ const chartedSeries = computed(() => {
           <line x1="0" y1="50" x2="100" y2="50" stroke="#e2e8f0" stroke-width="0.3" />
           <line x1="0" y1="75" x2="100" y2="75" stroke="#e2e8f0" stroke-width="0.3" />
 
-          <g v-for="(s, index) in chartedSeries" :key="'series-' + s.name" class="animated-group">
+          <g v-for="s in chartedSeries" :key="'series-' + s.name" class="animated-group">
             <path :d="s.paths.area" :fill="s.color" opacity="0.5" class="area-path" />
             <path :d="s.paths.line" fill="none" :stroke="s.color" stroke-width="1.5" class="line-path" />
           </g>

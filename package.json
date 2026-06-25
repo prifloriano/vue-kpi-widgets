@@ -1,19 +1,16 @@
 {
   "name": "@prifloriano/vue-kpi-widgets",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/vue-kpi-widgets.umd.js",
   "module": "./dist/vue-kpi-widgets.es.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vue-kpi-widgets.es.js",
       "require": "./dist/vue-kpi-widgets.umd.js"
     },
-    "./style.css": "./dist/style.css"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "./dist/*": "./dist/*",
+    "./*": "./dist/*"
   },
   "repository": {
     "type": "git",

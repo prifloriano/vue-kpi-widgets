@@ -33,7 +33,7 @@ const treemapCells = computed(() => {
   return sortedData.value.map((item, index) => {
     const fraction = remainingTotal === 0 ? 0 : item.value / remainingTotal;
 
-    let rectW, rectH, nextX, nextY;
+    let rectW = 0, rectH = 0, nextX = 0, nextY = 0;
 
     if (index === sortedData.value.length - 1) {
       rectW = currentW;
